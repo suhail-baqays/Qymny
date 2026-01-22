@@ -1,4 +1,5 @@
 import axios from "axios"
+import ReactGA from "react-ga4";
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const API_url = `${BASE_URL}/api/analyze`
@@ -17,6 +18,10 @@ export const analyze_Resume = async(File , Description , lang)=>{
                 "Content-Type":"multipart/form-data"      //send the data to router class
             }
         })
+        ReactGA.event({
+            category: "CV Analysis",
+            action: "Successful Upload",
+        });
         return response.data
     }catch(error){
         console.error("Error sending resume :", error);
