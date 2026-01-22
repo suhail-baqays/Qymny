@@ -2,7 +2,7 @@
 
 **Qymny** is a full-stack web application powered by **OpenAI** that helps job seekers analyze their resumes against specific job descriptions. It provides detailed feedback, a compatibility score, and actionable advice to improve ATS visibility.
 
-🔗 **Live Demo:** [اضغط هنا وضع رابط موقعك - Render Link]
+🔗 **Live Demo:** [https://qymny.onrender.com]
 
 ---
 
